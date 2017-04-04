@@ -23,7 +23,7 @@
     	<div class="container">
     		<a href="$AbsoluteBaseURL" class="logo"><img src="$ThemeDir/images/logo.png" alt="Tiki" /></a>
     		<div class="dropdown-container">
-			  <img src="$ThemeDir/images/icon-menu.png" class="menu-button" alt="Menu" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
+			  <div class="menu-button" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Menu"></div>
 			  <div class="dropdown-menu menu-body" aria-labelledby="dLabel">
 		  		<div class="row">
 		  			<div class="col-md-offset-4 col-md-4"> 
@@ -46,6 +46,7 @@
     		</div>
     	</div>
     </section>
+    <section id="body">
 
 	$Layout
 	
@@ -72,7 +73,7 @@
 				<div class="col-md-7 mb-25">
 					<h3>Contact</h3>
 					<hr class="thick" />
-					<div class="row open-sans">
+					<div class="row open-sans full-1200">
 						<div class="col-md-5">
 							Tiki Wine & Vineyards<br />
 							PO Box 17 655, Sumner, 8840<br />
@@ -80,9 +81,11 @@
 							Christchurch 8063
 						</div>
 						<div class="col-md-5">
-							Email: <b class="email">Email</b><br />
+							Email: <b class="email">$EncryptedEmail.Tag</b><br />
+							<span class="white-link">
 							Free Phone NZ: 0800 TIKI WINE<br />
 							Phone: +64 3 326 5551
+							</span>
 						</div>
 					</div>
 				</div>
@@ -104,5 +107,7 @@
 		</div>
 		<a href="javascript:" id="return-to-top"><i class="icon-up-open"></i></a>
 	</section>
+	</section>
+	$EncryptedEmail.Script
   </body>
 </html>

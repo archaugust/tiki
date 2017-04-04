@@ -12,8 +12,8 @@
 			<% loop $Children %>
 				<div class="col-md-4 col-sm-6">
 					<figure class="box blog">
+						<img src="$Photo.CroppedImage(480,480).URL" alt="$Title" />
 						<a href="$Link">
-							<img src="$Photo.CroppedImage(480,480).URL" alt="$Title" />
 							<figcaption>
 								<div>
 									<h3>$Title</h3>

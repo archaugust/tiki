@@ -24,7 +24,7 @@ function onContactSubmit(token) {
 			$('#contactDiv').html('Please enter a valid email address.');
 	}
 	else {
-		$('#contactDiv').html('Please specify all required fields.');
+		$('#contactDiv').html('Please complete all required fields.');
 	}
 
 	grecaptcha.reset(recaptcha2);

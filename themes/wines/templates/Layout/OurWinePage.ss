@@ -43,4 +43,11 @@
 			<% end_loop %>
 			</div>
 		</div>
+		<div class="brands-menu">
+			<div class="container">
+				<% loop $Wines %>
+				<div class="menu-item" id="link-$Pos"><a href="$Link">$Title</a></div>
+				<% end_loop %>
+			</div>
+		</div>
 	</section>

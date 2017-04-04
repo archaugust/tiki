@@ -32,11 +32,11 @@
 					  </div>
 					
 					  <!-- Controls -->
-					  <a class="left carousel-control" href="#slideshow" role="button" data-slide="prev">
+					  <a class="left carousel-control" data-target="#slideshow" role="button" data-slide="prev">
 					    <img src="$ThemeDir/images/slide-left.png" alt="Previous" class="icon-prev" aria-hidden="true" />
 					    <span class="sr-only">Previous</span>
 					  </a>
-					  <a class="right carousel-control" href="#slideshow" role="button" data-slide="next">
+					  <a class="right carousel-control" data-target="#slideshow" role="button" data-slide="next">
 					    <img src="$ThemeDir/images/slide-right.png" alt="Next" class="icon-next" aria-hidden="true" />
 					    <span class="sr-only">Next</span>
 					  </a>

@@ -11,6 +11,7 @@
 			</div>
 			<div class="col-md-6">
 				$Content
+				<span class="gold">Email: </span><span class="email">$EncryptedEmail.Tag</span>
 				<h3 class="mt-25">Connect</h3>
 				<hr class="thick" />
 				<div class="mt-25">

@@ -9,7 +9,7 @@
 				<div class="col-md-6">
 					<h1>$Title</h1>
 					<div class="date mb-25">$Date.Format('F Y')</div>
-					<div class="content open-sans">
+					<div class="content open-sans mb-70">
 					$Content
 					</div>
 				</div>

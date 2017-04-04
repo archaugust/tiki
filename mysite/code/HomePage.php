@@ -30,8 +30,16 @@ class HomePage extends Page {
 class HomePage_Controller extends Page_Controller {
 	public function init() {
 		parent::init();
-		
-		Requirements::javascript("{$this->Themedir()}/js/instafeed.min.js");
+
+		if (preg_match("/\b(?:a(?:ndroid|vantgo)|b(?:lackberry|olt|o?ost)|cricket|do‌​como|hiptop|i(?:emob‌​ile|p[ao]d)|kitkat|m‌​(?:ini|obi)|palm|(?:‌​i|smart|windows )phone|symbian|up\.(?:browser|link)|tablet(?: browser| pc)|(?:hp-|rim |sony )tablet|w(?:ebos|indows ce|os))/i", $_SERVER["HTTP_USER_AGENT"]) == true)
+			Requirements::customCSS('
+				/* mobile only css */
+				figure.box:hover figcaption {
+					display:none;
+				}
+			');
+			
+		Requirements::javascript("{$this->Themedir()}/js/home-page.js");
 		Requirements::customScript(<<<JS
 		    var feed = new Instafeed({
 		        get: 'user',
@@ -39,7 +47,8 @@ class HomePage_Controller extends Page_Controller {
 				accessToken: '$this->InstagramAccessToken',
 				resolution: 'standard_resolution',
 				limit: 8,
-		        template: '<div><figure class="box"><a href="{{link}}" target="_blank"><img src="{{image}}" /><figcaption>{{caption}}</figcaption></figure></a></div>'
+				after: mobileTap,
+		        template: '<div><figure class="box"><img src="{{image}}" /><a href="{{link}}" target="_blank"><figcaption>{{caption}}</figcaption></a></figure></div>'
 		    });
 		    feed.run();
 JS

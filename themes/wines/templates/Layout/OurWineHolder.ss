@@ -18,13 +18,11 @@
 		<div class="pv-55 bg-darker-gray text-center">
 			<h2>Our Brands</h2>
 		</div>
-		<div class="brands-menu visible-lg">
+		<div class="brands-menu">
 			<div class="container">
-				<ul class="list-inline">
-					<% loop $Children %>
-					<li class="menu-link" id="link-$Pos"><a href="$Link">$Title</a></li>
-					<% end_loop %>
-				</ul>
+				<% loop $Children %>
+				<div class="menu-item" id="link-$Pos"><a href="$Link">$Title</a></div>
+				<% end_loop %>
 			</div>
 		</div>
 		<div class="container">

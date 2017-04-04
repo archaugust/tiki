@@ -18,10 +18,12 @@
 				<div class="col-md-6">
 					<div class="home-page">
 						<figure class="more">
+							<a href="$Link">
 							$Photo.CroppedImage(600, 400)
 							<figcaption>
-								<a href="$Link" class="btn btn-brown">More</a>
+								<button class="btn btn-brown">More</button>
 							</figcaption>
+							</a>
 						</figure>
 						<div class="description open-sans">
 							$Teaser
@@ -42,19 +44,9 @@
 				<div class="video-container">$VideoEmbedCode</div>
 			</div>
 			<div class="gold">
-				<i class="icon-instagram-1 instagram-lg"></i>
+				<a href="https://www.instagram.com/tikiwines/" target="_blank"><i class="icon-instagram-1 instagram-lg"></i></a>
 				<h3 class="mt-25 mb-70"><span class="roman">Join the conversation</span> <a href="https://www.instagram.com/tikiwines/" target="_blank">@tikiwines</a></h3>
 			</div>
-			<!--
-			<form action="https://api.instagram.com/oauth/access_token" method="post">
-				<input type="text" name="client_id" value="13bfbc9d1f7f4eb9b3fd41465ab76b05">
-				<input type="text" name="client_secret" value="ce322063b19c485cb0fa224cfe33c9be">
-				<input type="text" name="grant_type" value="authorization_code">
-				<input type="text" name="redirect_uri" value="http://tiki.dev">
-				<input type="text" name="code" value="809d1ca6b837400186b3dfbe3e6b06c6">
-				<input type="submit">
-			</form>
-			-->
-      		<div id="instafeed"></div>
+      		<div id="instafeed" class="row"></div>
 		</div>
 	</section>

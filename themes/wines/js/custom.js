@@ -1,10 +1,13 @@
 $(function(){
 	$('.dropdown-container').on('show.bs.dropdown', function() {
 	    $(this).find('.dropdown-menu').slideDown();
+	    $('.menu-button').css('backgroundImage','url("themes/wines/images/icon-menu-close.png")');
+	    console.log($('.menu-button').css('backgroundImage'))
 	});
 	
 	$('.dropdown-container').on('hide.bs.dropdown', function() {
 	    $(this).find('.dropdown-menu').slideUp();
+	    $('.menu-button').css('backgroundImage','url("themes/wines/images/icon-menu.png")');
 	});
 
 	$(window).scroll(function() {
@@ -26,11 +29,15 @@ $(function(){
 	    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
 	});
 	
-	var email = '';
-	var kslwcao = ['>','@','k','i','m','i','a','i','o','e','>','a','h','<','t','c','l','o','f','e','r','i','m','o','e','"','"','w','c',' ','n','t','t','=','i','a','s','c','/','=',' ','i','o','f','i','@','m','k','i','f','a','"','a','n','o','e','.','l','i','i',':','<','n','l','s','.','m','w','"','n'];var ipsapsb = [69,53,23,11,65,59,44,49,19,42,48,68,3,0,54,35,36,14,18,28,4,26,32,52,61,47,33,58,30,2,27,13,21,7,45,10,38,63,67,40,34,24,31,6,16,20,43,56,55,51,37,41,1,17,64,5,62,12,22,57,15,66,50,46,39,29,9,25,8,60];var obpxfgs= new Array();for(var i=0;i<ipsapsb.length;i++){obpxfgs[ipsapsb[i]] = kslwcao[i]; }for(var i=0;i<obpxfgs.length;i++){email += obpxfgs[i]}	
-	$('.email').html(email);
+	$('#header').affix({
+	    offset: {
+	        top: 88
+	    }
+	});
 
 });
+
+$('.menu-body').innerHeight($(document).height());
 
 function validateEmail(emailAddress) {
     var pattern = new RegExp(/^(("[\w-+\s]+")|([\w-+]+(?:\.[\w-+]+)*)|("[\w-+\s]+")([\w-+]+(?:\.[\w-+]+)*))(@((?:[\w-+]+\.)*\w[\w-+]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][\d]\.|1[\d]{2}\.|[\d]{1,2}\.))((25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\.){2}(25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\]?$)/i);

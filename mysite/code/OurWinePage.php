@@ -32,6 +32,10 @@ class OurWinePage extends Page {
 		
 		return $fields;
 	}
+
+	public function Wines() {
+		return OurWinePage::get();
+	}
 }
 
 class OurWinePage_Controller extends Page_Controller {
@@ -39,5 +43,4 @@ class OurWinePage_Controller extends Page_Controller {
 		parent::init();
 		Requirements::javascript("{$this->Themedir()}/js/wine-page.js");
 	}
-	
 }

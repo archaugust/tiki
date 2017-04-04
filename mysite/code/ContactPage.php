@@ -1,17 +1,17 @@
 <?php
 class ContactPage extends Page {
+	private static $db = array(
+			'EmailRecipient' => 'Varchar'
+	);
+	
 	private static $has_many = array (
 			'Contacts' => 'Contact'
 	);
-	
+
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
-		$fields->addFieldToTab('Root.ContactMessages', GridField::create(
-				'Contacts',
-				'Contact Messages',
-				$this->Contacts(),
-				GridFieldConfig_RecordEditor::create()
-		));
+		$fields->addFieldToTab('Root.Main', TextField::create('EmailRecipient', 'Email Recipient'), 'Content');
+		
 		return $fields;
 	}
 }
@@ -82,7 +82,7 @@ class ContactPage_Controller extends Page_Controller {
 					
 					$email = new Email();
 					
-					$email->setTo('archaugust@yahoo.com');
+					$email->setTo($this->EmailRecipient);
 					$email->setFrom('noreply@tikiwine.com');
 					$email->setSubject("Contact Message - ". $data['Subject']);
 					
