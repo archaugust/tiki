@@ -1,12 +1,7 @@
 $(function(){
-	var maxHeight = 0;
-	$('.home-page').each(function () {
-	    if ( $(this).outerHeight() > maxHeight ) {
-	    	maxHeight = $(this).outerHeight(); 
-	    }
-	});
-    $('.home-page').outerHeight(maxHeight);
-    
+	$.getScript("themes/wines/js/box-resize.js", function(){
+		$(window).trigger('resize');
+	});	
 });
 
 function mobileTap(){

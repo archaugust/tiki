@@ -1,11 +1,7 @@
 $(function(){
-	var maxHeight = 0;
-	$('.box-wine').each(function () {
-	    if ( $(this).outerHeight() > maxHeight ) {
-	    	maxHeight = $(this).outerHeight(); 
-	    }
-	});
-    $('.box-wine').outerHeight(maxHeight);
+	$.getScript("themes/wines/js/box-resize.js", function(){
+		$(window).trigger('resize');
+	});	
 });
 
 $('.menu-item').hover(function() {

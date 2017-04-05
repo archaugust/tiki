@@ -99,7 +99,7 @@ class ContactPage_Controller extends Page_Controller {
 					//				$email->send();
 					
 					Session::clear("FormData.{$form->getName()}.data");
-					return 'Thanks for contacting us!';
+					return "Your message has been sent. Thanks for getting in touch, we'll be with you soon.";
 				}
 			}
 			else

@@ -36,9 +36,11 @@
 						</figure>
 						</a>
 						<div class="description open-sans">
+							<div>
 							$Teaser
 							<a href="$Link">Find out more.</a>
 							<img src="$ThemeDir/images/arrow-up.png" alt="$Title" class="arrow" />
+							</div>
 						</div>
 					</div>
 				</div>

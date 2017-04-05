@@ -26,8 +26,10 @@
 							</a>
 						</figure>
 						<div class="description open-sans">
+							<div>
 							$Teaser
 							<a href="$Link">Find out more.</a>
+							</div>
 						</div>
 					</div>
 				</div>

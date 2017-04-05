@@ -250,6 +250,8 @@ input[type='text'], input[type='email'], input[type='password'] {
 	text-transform:uppercase;
 	padding: 10px 24px;
 	color: #fff;
+	letter-spacing: .085em;
+	font-weight: 600;
 }
 
 .banner-home a:hover {
@@ -445,11 +447,12 @@ input[type='text'], input[type='email'], input[type='password'] {
 /* content - our wine */
 .brands-menu {
 	background-color: #b3995d;
-	padding: 32px;
+	padding: 32px 0;
+	display: block;
+	width: 100%;
 }
 .brands-menu > div {
 	text-align: center;
-	padding: 0 100px;
 }
 .brands-menu .menu-item {
 	display:inline-block;
@@ -975,16 +978,11 @@ label {
 	}
 
 	/* our wine */
-	.brands-menu .menu-item {
-		display: block;
-		margin: 5px 0;
-	}
 	.box-wines {
 		padding: 30px 0;
 	}
 	.box-wine {
 		margin: 25px 15px;
-		padding: 20px 30px 40px;
 	}
 	
 	.box-wine .arrow {
@@ -1050,6 +1048,10 @@ label {
 	.mb-25 { margin-bottom: 25px; }
 	.mb-40 { margin-bottom: 30px; }
 	.mb-70 { margin-bottom: 50px; }
+	
+	.brands-menu .menu-item {
+		display: block;
+	}
 }
 @media (max-width: 1199px) {
 	.full-1200 .col-md-5 {
@@ -1097,17 +1099,8 @@ label {
 
 	.nowrap { white-space:normal; }
 
+	.brands-menu .menu-item a {
+		margin: 0 15px;
+	}
 }
 
-@media (max-width: 1366px) {
-	.brands-menu {
-		padding: 32px 0;
-		margin: 0 -100px;
-	}
-	.brands-menu li {
-		padding: 20px;
-		margin: 0 20px;
-	}
-}
-	
-}
