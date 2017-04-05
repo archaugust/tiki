@@ -1,6 +1,6 @@
     <section id="banner">
     	<div class="banner-home">
-    		$Photo.CroppedImage(1800,610)
+    		$Photo.CroppedImage(1800,773)
     		<div class="banner-text">
     			$BannerText
     		</div>
