@@ -1,7 +1,9 @@
 <?php
 class ContactPage extends Page {
 	private static $db = array(
-			'EmailRecipient' => 'Varchar'
+			'EmailRecipient' => 'Varchar',
+			'MailChimpApiKey' => 'Varchar',
+			'MailChimpListID' => 'Varchar'
 	);
 	
 	private static $has_many = array (
@@ -11,6 +13,8 @@ class ContactPage extends Page {
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
 		$fields->addFieldToTab('Root.Main', TextField::create('EmailRecipient', 'Email Recipient'), 'Content');
+		$fields->addFieldToTab('Root.Main', TextField::create('MailChimpApiKey', 'MailChimp API Key'), 'Content');
+		$fields->addFieldToTab('Root.Main', TextField::create('MailChimpListID', 'MailChimp List ID'), 'Content');
 		
 		return $fields;
 	}

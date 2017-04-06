@@ -632,7 +632,7 @@ figure.more, figure.box, figure.wine {
 	text-align: center;
 } 
 figure.wine {
-	padding-bottom: 20px;
+	padding: 20px;
 }
 figure.more img, figure.box img {
 	width: 100%;
@@ -928,7 +928,7 @@ label {
 		overflow: hidden;
 	}
 	.banner-home .banner-text {
-		top: 40px;
+		top: 60px;
 	}
 	.banner-home h1 {
 		font-size: 36px;
@@ -946,7 +946,9 @@ label {
 		width:auto;
 		height:250px;
 	}
-	
+	.banner-home > img {
+		height:330px;
+	}
 	/* content */
 	.home-page {
 		margin: 28px 0;
@@ -988,7 +990,7 @@ label {
 	.box-wine .arrow {
 		position: absolute;
 		top: 0;
-		right: 30px;
+		right: 0;
 		opacity: 0;
 	}
 	
@@ -1097,7 +1099,7 @@ label {
 		right: 0;
 	}
 
-	.nowrap { white-space:normal; }
+	.subscribe-text .nowrap { white-space:normal; }
 
 	.brands-menu .menu-item a {
 		margin: 0 15px;

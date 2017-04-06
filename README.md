@@ -9,3 +9,6 @@ Minor responsive styling adjustments.
 
 Update 2:
 Some last minute design changes.
+
+Update 3:
+Added MailChimp API integration.

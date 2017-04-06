@@ -56,7 +56,7 @@
 				<div class="col-md-5">
 					<h2>Stay in Touch</h2>
 					<hr class="thick" />
-					<div class="open-sans">
+					<div class="open-sans subscribe-text">
 						Receive news & information on special promotions, <span class="nowrap">straight to your inbox on a monthly basis.</span>
 					</div>
 				</div>

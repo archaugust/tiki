@@ -5,14 +5,17 @@ class Contact extends DataObject {
 			'Name' => 'Varchar',
 			'Email' => 'Varchar',
 			'Subject' => 'Varchar(160)',
-			'Message' => 'Text'
+			'Message' => 'Text',
 	);
 
+	private static $default_sort = 'Created DESC';
+	
 	private static $has_one = array (
 			'ContactPage' => 'ContactPage'
 	);
 	
 	private static $summary_fields = array (
+			'Created.Nice' => 'Date Received',
 			'Name' => 'Name',
 			'Email' => 'Email',
 			'Subject' => 'Subject',
