@@ -40,7 +40,6 @@ class Page_Controller extends ContentController {
 	 */
 	private static $allowed_actions = array (
 			'SubscribeForm',
-			'Test'
 	);
 	
 	public function init() {
@@ -130,7 +129,7 @@ class Page_Controller extends ContentController {
 						<p>Manage Subscribers at the <a href="http://tikiwine.com/admin">CMS</a></p>
 					';
 					$email->setBody($messageBody);
-	//				$email->send();
+					$email->send();
 					
 					Session::set('subscribed', true);
 					
