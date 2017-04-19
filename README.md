@@ -1,6 +1,6 @@
 8 custom page types, blog, catalog, etc.
 
-Live site at http://tiki.spinifextestsite.com (temp).
+Live site at http://tikiwine.com.
 
 Update 1:
 Added UX enhancements to header, main menu, wine catalog pages.
